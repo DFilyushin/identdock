@@ -1,4 +1,4 @@
-FROM python:3.4
+FROM python:stretch
 
 RUN groupadd -r uwsgi && useradd -r -g uwsgi uwsgi
 RUN pip install Flask uWSGI requests redis
